@@ -1,49 +1,86 @@
-body{
-    background-color: #FAFAFA;
-    font-family: Arial, Helvetica, sans-serif;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-bar{
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.nav-bar {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0cm;
-    margin: 0;
-    height: 70px;
     width: 100%;
-    background-color: #FFFFFF;
-    border: 1px solid #ECECEC;
-    box-shadow: 0 0 10px #c9c7c7;
+    height: 70px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1200px;
-    color: rgb(66, 61, 61);
-    
-}
-.nav-bar i{
-    width: 100px;
+    padding: 0 20px;
 }
 
-.nav-bar ul{
-    list-style-type: none;
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu */
+.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    transition: 0.3s;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
     cursor: pointer;
-    width: auto;
-}
-
-.nav-bar ul li{
+    padding: 5px 10px;
     transition: 0.3s;
-    border: 2px solid white;
-    border-radius: 10px;
-
 }
 
-.nav-bar ul li:hover{
-    box-shadow: 0 0 10px#ff0000;
-    padding: 5px;
+.nav-links li:hover {
+    background: #eee;
+    border-radius: 5px;
+}
 
+/* Menu Button */
+.menu-btn {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Main content */
+.main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* 🔥 Responsive */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
