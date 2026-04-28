@@ -3,36 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Irfan Mulani — backend developer portfolio with futuristic design, skills, projects, and contact details.">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/index.css">
 
-    <link rel="stylesheet" href="/Frontend/CSS/index.css">
-
-    <title>Irfan Mulani</title>
+    <title>Irfan Mulani | Futuristic Portfolio</title>
 </head>
 <body>
+    <div class="bg-orb bg-orb-one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-two" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
 
-    <nav class="nav-bar">
-        <div class="logo">
-            <i class="fa-solid fa-house"></i> <a href="index.html"> Home </a>
-        </div>
+    <header class="nav-bar">
+        <a class="logo" href="#home" aria-label="Go to home section">
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            <span>Irfan Mulani</span>
+        </a>
 
-        <div class="menu-btn" id="menuBtn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation menu" aria-controls="menu" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
 
-        <ul class="nav-links" id="menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <nav class="nav-panel" aria-label="Primary navigation">
+            <ul class="nav-links" id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="main">
-        <h1>Welcome  👋</h1>
-        <p>Responsive Navbar Working ✅</p>
-    </div>
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">Backend Developer • BCA Graduate • Problem Solver</p>
+                <h1>Irfan Mulani</h1>
+                <p class="hero-copy">
+                    Detail-oriented backend developer focused on Python, Django, and FastAPI, building secure, scalable,
+                    and database-driven web applications with a clean futuristic experience.
+                </p>
 
-<script src="/Frontend/Js/index.js"></script>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">Explore Projects</a>
+                    <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                </div>
+
+                <div class="hero-stats">
+                    <article class="stat-card">
+                        <strong>3+</strong>
+                        <span>Hands-on Projects</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>2025</strong>
+                        <span>BCA Graduate</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>Backend</strong>
+                        <span>Focused Developer</span>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="hero-card" aria-label="Profile summary card">
+                <div class="terminal-header" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-body">
+                    <p class="terminal-label">/profile</p>
+                    <h2>Full-Stack Foundations, Backend Strength</h2>
+                    <p>
+                        I build practical solutions for e-commerce, client management, and administrative systems using
+                        Python, Django, MySQL, HTML, CSS, Bootstrap, JavaScript, Git, and GitHub.
+                    </p>
+
+                    <div class="chip-row">
+                        <span class="chip">Python</span>
+                        <span class="chip">Django</span>
+                        <span class="chip">FastAPI</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">REST APIs</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section info-grid" id="about">
+            <article class="panel">
+                <p class="section-tag">Professional Summary</p>
+                <h2>Backend development with secure logic and clean architecture.</h2>
+                <p>
+                    Detail-oriented BCA graduate with strong expertise in Python, Django, and FastAPI, specializing in
+                    backend development and RESTful API design. Experienced in building scalable web applications,
+                    e-commerce platforms, and database-driven systems through hands-on projects.
+                </p>
+                <p style="margin-top: 14px;">
+                    Proficient in secure authentication systems, CRUD operations, optimized database management, and
+                    delivering reliable applications that solve real business problems.
+                </p>
+            </article>
+
+            <article class="panel spotlight">
+                <p class="section-tag">Key Highlights</p>
+                <ul class="timeline">
+                    <li>
+                        <span aria-hidden="true"></span>
+                        <div>
+                            <h3>RESTful API and CRUD systems</h3>
+                            <p>Built structured backend workflows for business and client management use cases.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span aria-hidden="true"></span>
+                        <div>
+                            <h3>Secure authentication</h3>
+                            <p>Implemented authentication-focused features for web applications and dashboards.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span aria-hidden="true"></span>
+                        <div>
+                            <h3>Database-driven problem solving</h3>
+                            <p>Designed MySQL-backed systems for inventory, orders, records, and administration.</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="section-tag">Technical Skills</p>
+                <h2>Tools and technologies used to build reliable systems.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <i class="fa-brands fa-python" aria-hidden="true"></i>
+                    <h3>Languages</h3>
+                    <p>Python, Java, JavaScript</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                    <h3>Frameworks</h3>
+                    <p>Django, FastAPI (basic)</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, Bootstrap</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
+                    <h3>Databases & Tools</h3>
+                    <p>MySQL, Git, GitHub</p>
+                </article>
+            </div>
+
+            <div class="resume-grid">
+                <article class="resume-card">
+                    <p class="meta">Core Concepts</p>
+                    <h3>Engineering fundamentals</h3>
+                    <p>RESTful APIs, CRUD operations, object-oriented programming, database design, authentication systems, SQL, MongoDB basics, and PostgreSQL basics.</p>
+                    <div class="stack">
+                        <span>REST APIs</span>
+                        <span>CRUD</span>
+                        <span>OOP</span>
+                        <span>Auth</span>
+                        <span>Database</span>
+                        <span>SQL</span>
+                        <span>MongoDB (Basic)</span>
+                        <span>PostgreSQL (Basic)</span>
+                    </div>
+                </article>
+
+                <article class="resume-card">
+                    <p class="meta">Soft Skills</p>
+                    <h3>Professional strengths</h3>
+                    <p>Problem-solving, team collaboration, time management, and adaptability in fast-paced environments.</p>
+                    <div class="stack">
+                        <span>Problem-Solving</span>
+                        <span>Teamwork</span>
+                        <span>Time Management</span>
+                        <span>Adaptability</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="section-tag">Projects</p>
+                <h2>Practical applications built for business workflows.</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <h3>E-Commerce Web Application</h3>
+                    <p>
+                        Built a full-stack e-commerce platform using Django, Python, and MySQL with user authentication,
+                        product management, order processing, shopping cart functionality, and admin inventory tools.
+                    </p>
+                    <span class="project-meta">Django • Python • MySQL</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true"><i class="fa-solid fa-address-book"></i></div>
+                    <h3>Client Record Management System</h3>
+                    <p>
+                        Developed a web-based application using PHP, HTML, CSS, JavaScript, and MySQL with CRUD
+                        operations, centralized data storage, and secure structured records.
+                    </p>
+                    <span class="project-meta">CRUD • Database • Web App</span>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Computer Shop Administration System</h3>
+                    <p>
+                        Created a desktop-based Python application for inventory tracking, billing, customer records,
+                        sales tracking, and employee management to improve operational efficiency.
+                    </p>
+                    <span class="project-meta">Python • Admin System • Desktop</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="section-heading">
+                <p class="section-tag">Education & Identity</p>
+                <h2>Academic background and personal details.</h2>
+            </div>
+
+            <div class="resume-grid">
+                <article class="resume-card">
+                    <p class="meta">Education</p>
+                    <h3>Bachelor of Computer Applications</h3>
+                    <p>Savitribai Phule Pune University</p>
+                    <p>2022 – 2025</p>
+                </article>
+
+                <article class="resume-card">
+                    <p class="meta">Languages</p>
+                    <h3>Communication</h3>
+                    <p>English, Hindi, Marathi</p>
+                    <div class="stack">
+                        <span>English</span>
+                        <span>Hindi</span>
+                        <span>Marathi</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="section-tag">Contact</p>
+                <h2>Open to entry-level backend and software opportunities.</h2>
+            </div>
+
+            <div class="contact-card">
+                <h3>IRFAN MULANI</h3>
+                <p style="margin-top: 10px;">
+                    8530904366 • imulani946@gmail.com •
+                    <a href="https://github.com/IrfanMulani01" target="_blank" rel="noreferrer">github.com/IrfanMulani01</a>
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:imulani946@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+                    <a href="tel:+918530904366"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call</a>
+                    <a href="https://github.com/IrfanMulani01" target="_blank" rel="noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Irfan Mulani. Built with a futuristic vision.</p>
+    </footer>
+
+    <script src="../Js/index.js"></script>
 </body>
 </html>
